@@ -6,9 +6,29 @@
     <title>About</title>
     <link rel="stylesheet" href="../input.css">
     <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
+    <style>
+      .main{
+        height: 100vh;
+      }
+      .anime{
+        height: 30vh;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all;
+        /* transform: translate(-2000px); */
+        animation: animate 1s linear 0.5s 1;
+      }
+      @keyframes animate {
+        0%{transform: translate(-2000px);}
+        100%{transform: translate(0px);}
+        
+      }
+    </style>
 </head>
 <body>
-    <header class="text-blue-600 body-font bg-blue-100 h-20">
+    <header class="text-blue-600  z-10 top-0 sticky  body-font bg-blue-100 h-20">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
             <img src="img/APS Blogs-logos_black1.png" width="150px" ></img>
@@ -26,5 +46,10 @@
           </a>
         </div>
       </header>
+      <main class="bg-blue-50 main">
+        <div class="anime">
+          <h1 class="text-5xl">We are the creators!</h1>
+        </div>
+      </main>
 </body>
 </html>
