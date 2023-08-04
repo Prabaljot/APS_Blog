@@ -99,7 +99,7 @@
   <main>
     <div class="main lg:flex-row flex-col">
       <form class="signin">
-        <h1 class="text-5xl">Login</h1>
+        <h1 id="log" class="text-5xl">Login</h1>
         <div class="subop">
           <label for="email">Email</label>
           <input placeholder="Enter your email here!" type="email" id="email">
@@ -107,6 +107,7 @@
         <div class="subop">
           <label for="password">Password</label>
           <input placeholder="Enter your password here!" type="password">
+          <a href="#reg" style="text-decoration: underline; color: blue;">Register</a>
         </div>
         <button class="but" type="submit">Login</button>
       </form>
@@ -123,8 +124,9 @@
         <div class="subop">
           <label for="password">Confirm Password</label>
           <input placeholder="Re-enter your new password here!" type="password">
+          <a href="#log" style="text-decoration: underline; color: blue;">Login</a>
         </div>
-        <button class="but" type="submit">Sign Up</button>
+        <button id="reg" class="but" type="submit">Sign Up</button>
       </form>
     </div>
   </main>

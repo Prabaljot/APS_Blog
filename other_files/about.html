@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="../input.css">
     <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
     <style>
-      .main{
-        height: 100vh;
+      .anime table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        width: 100%;
+      }
+      .anime table tr{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+        width: 100%;
+        flex-wrap: wrap;
       }
       .anime{
-        height: 30vh;
+        padding: 1.5em;
         background-color: lightblue;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1s all;
-        /* transform: translate(-2000px); */
-        animation: animate 1s linear 0.5s 1;
+        animation: animate 0.5s linear 0.5s 1;
       }
       @keyframes animate {
         0%{transform: translate(-2000px);}
         100%{transform: translate(0px);}
-        
       }
     </style>
 </head>
@@ -48,7 +57,15 @@
       </header>
       <main class="bg-blue-50 main">
         <div class="anime">
-          <h1 class="text-5xl">We are the creators!</h1>
+          <table border="2px">
+            <tr class="sm:flex-col">
+              <td>
+                <h1 style="font-size: 1.3em; font-weight: bold; font-family: sans-serif; text-align: center;">Our school is home of Excellence</h1>
+                <p>With the establishment of 18FAD, it was decided to establish an english medium school. In 1973, Army Public School Unchi Bassi was established in 18FAD. The school catered its various services upto primary level till 1978. The school was upgraded to Class 10th in apr 1980 and affiliated to CBSE  New Delhi. The school was further upgraded to +2 level in apr 1986. The School at present has a total of around 2000 students on its roll.</p>
+              </td>
+              <td style="padding: 1em;"><img class="sm:hidden" src="img/demo.jpeg" alt=""></td>
+            </tr>
+          </table>
         </div>
       </main>
 </body>
