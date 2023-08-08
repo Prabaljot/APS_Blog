@@ -11,14 +11,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
       }
       .anime table tr{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         width: 100%;
         flex-wrap: wrap;
       }
@@ -33,6 +33,14 @@
       @keyframes animate {
         0%{transform: translate(-2000px);}
         100%{transform: translate(0px);}
+      }
+      .team h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: 500;
       }
     </style>
 </head>
@@ -57,16 +65,49 @@
       </header>
       <main class="bg-blue-50 main">
         <div class="anime">
-          <table border="2px">
+          <table>
             <tr class="sm:flex-col">
               <td>
-                <h1 style="font-size: 1.3em; font-weight: bold; font-family: sans-serif; text-align: center;">Our school is home of Excellence</h1>
-                <p>With the establishment of 18FAD, it was decided to establish an english medium school. In 1973, Army Public School Unchi Bassi was established in 18FAD. The school catered its various services upto primary level till 1978. The school was upgraded to Class 10th in apr 1980 and affiliated to CBSE  New Delhi. The school was further upgraded to +2 level in apr 1986. The School at present has a total of around 2000 students on its roll.</p>
+                <h1 style="font-size: 1.3em; font-weight: bold; font-family: sans-serif; text-align: center;">Our school is home of Excellence!</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eligendi repudiandae esse eaque ad dolor cum excepturi incidunt dolore in atque quis odio non praesentium magni necessitatibus, at blanditiis. Recusandae illum illo magni inventore facilis ut. Autem consequatur maxime veritatis, earum deleniti reiciendis vero voluptas dolorum expedita, at tempora quo dignissimos laudantium maiores. Veniam necessitatibus cumque labore soluta odio, adipisci animi at temporibus consequuntur. Quibusdam laboriosam ex quis sunt, voluptatum ea consequatur rerum tempore cum quam dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque omnis eius quia, aut veritatis. Inventore deserunt quisquam consequatur sequi itaque dicta, vitae ut hic? Adipisci optio deserunt voluptates id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolore voluptates vel labore magni, delectus molestias assumenda! Placeat esse minus, rem sapiente ipsa expedita, earum porro quae, exercitationem laboriosam quidem?</p>
               </td>
               <td style="padding: 1em;"><img class="sm:hidden" src="img/demo.jpeg" alt=""></td>
             </tr>
           </table>
         </div>
+        <div class="team"><h1>Our Team</h1></div>
       </main>
+      <footer class="text-gray-600 bg-blue-100 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <img src="img/APS Blogs-logos_black1.png" width="200px">
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+            APS Blogs
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://facebook.com" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+    
+          </span>
+        </div>
+      </footer>
 </body>
 </html>
