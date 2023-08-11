@@ -25,3 +25,5 @@ class blog(models.Model):
 
     def __str__(self):
         return self.title
+class upload(models.Model):
+    pass

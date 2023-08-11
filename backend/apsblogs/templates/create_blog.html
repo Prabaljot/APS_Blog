@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+  {% block title %}Create Blog{% endblock title %}
+  {% block stylesheet %}create_blog{% endblock stylesheet %}
+{% block mainbody %}
+
+  <main class="bg-blue-50">
+    <div class="p-2 auto-type-effect text-5xl text-gray-800 text-center">Write your
+      <span class="auto-input text-5xl text-gray-800"></span>
+    </div>
+    <div class="bg-blue-50">
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-28 mx-auto">
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-col flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Name of Author</label>
+                  <input type="text" placeholder="Enter your name here!" id="name" name="name"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="" class="leading-7 text-sm text-gray-600">Date</label>
+                  <input type="date" id="" name=""
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="category" class="leading-7 text-sm text-gray-600">Category of Blog</label>
+                  <select id="category" name="category"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <option value="general">General</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                    <option value="maths">Maths</option>
+                    <option value="sst">SST</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="news">News</option>
+                    <option value="announcements">Announcements</option>
+                    <option value="sports">Sports</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="lifestyle">Lifestyle</option>
+		    <option value="news">News</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="" class="leading-7 text-sm text-gray-600">Blog</label>
+                  <textarea id="" name=""
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  {% endblock mainbody %}
+  {% block js %}
+    let typed = new Typed(".auto-input", {
+      strings: ["creative ideas here!", "blogs here!"],
+      typeSpeed: 20,
+      backSpeed: 20,
+      loop: true
+    })
+    const alert = document.querySelector('.alert');
+    const dismissAlertButton = document.querySelector('.alert button');
+    if (dismissAlertButton) {
+      dismissAlertButton.addEventListener('click', event => {
+        event.preventDefault();
+        alert.classList.add('alert-hidden');
+        localStorage.setItem("hideAlert", true);
+      })
+    }
+  {% endblock js %}
