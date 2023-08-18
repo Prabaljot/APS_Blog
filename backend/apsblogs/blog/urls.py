@@ -7,4 +7,6 @@ urlpatterns = [
     path('account/', include('account.urls')),
     path('categories', views.category, name='categories'),
     path('createblog', views.c_blog, name='c_blog'),
+    path('blogHome', views.blogHome, name='blogHome'),
+    path('blogpost/<str:slug>', views.blogPost, name='blogPost'),
 ]
